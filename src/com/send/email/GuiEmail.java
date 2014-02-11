@@ -279,7 +279,7 @@ public class GuiEmail extends javax.swing.JFrame {
             message.setFrom(new InternetAddress(from));
 
             message.setRecipients(Message.RecipientType.TO,
-                InternetAddress.parse("alican.akkus94@gmail.com"));
+                InternetAddress.parse(jTextTo.getText().toString());
 
             message.setHeader("Content-Type", "text/plain; charset=UTF-8");// eğer
             // bu
